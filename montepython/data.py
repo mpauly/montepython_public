@@ -996,7 +996,7 @@ class Parameter(dict):
 
         self['initial'] = array[0:4]
         self['scale'] = array[4]
-        self['role'] = array[-1]
+        self['role'] = array[5]
         self['tex_name'] = io_mp.get_tex_name(key)
         if array[3] == 0:
             self['status'] = 'fixed'
